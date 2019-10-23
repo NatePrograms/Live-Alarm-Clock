@@ -1,0 +1,63 @@
+
+<!-- Start of webpage, sets up language and title on the tab -->
+
+<html lang='en'>
+	<head>
+		<title>Alarm Clock</title>
+		<meta charset='UFT-8' name='viewport' content='width=device-width, initial=scale=1.0' >
+
+	</head>
+	<!-- Sets up the body of the page to display the clock, and the dropdown options to select times and to type the description -->
+	<body>
+		<div id='main-container'>
+			<h2 id='clock'></h2>
+		</div>
+
+		<div id='alarm-container'>
+			<h3>Set Alarm Time</h3>
+				<label>
+					<div>
+					<select id='alarmhrs' ></select>
+					</div>
+				</label>
+				<label>
+					<div>
+					<select id='alarmmins' ></select>
+					</div>
+				</label>
+				<label>
+					<div>
+					<select id='alarmsecs' ></select>
+					</div>
+				</label>
+				<label>
+					<div>
+						<select id="ampm">
+							<option value="AM">Reminder Below</option>
+						</select>
+          <div>
+	<!-- Makes a "dropdown", however it has no options but instead lets a form be used to input data -->
+						<select id="desc">
+							<form>
+					      Reminder Description: <input type="text" id="rdesc"><br>
+					</form>
+      </div>
+					</div>
+				</label>
+				</div>
+
+
+<!-- Sets up the buttons to submit the alarm and to reset the alarm -->
+
+  <div id='buttonHolder'>
+    <div>
+      <button  id='setButton' onClick='alarmSet()'>Set Alarm</button>
+    </div>
+			<div>
+				<button  id='clearButton' onClick='alarmClear()'>Clear Alarm</button>
+			</div>
+		</div>
+
+		<script type='text/javascript' src='clock.js'></script>
+	</body>
+</html>
