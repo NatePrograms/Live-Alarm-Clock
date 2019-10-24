@@ -136,5 +136,4 @@ function alarmClear() {
 	document.getElementById('alarmmins').disabled = false;
 	document.getElementById('alarmsecs').disabled = false;
 	document.getElementById('ampm').disabled = false;
-	sound.pause();
 }
