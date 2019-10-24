@@ -35,9 +35,9 @@ function addZero(time) {
 function hoursMenu(){
 
 	var select = document.getElementById('alarmhrs');
-	var hrs = 12
+	var hrs = 23
 
-	for (i=1; i <= hrs; i++) {
+	for (i=0; i <= hrs; i++) {
 		select.options[select.options.length] = new Option( i < 10 ? "0" + i : i, i);
 
 	}
@@ -136,4 +136,5 @@ function alarmClear() {
 	document.getElementById('alarmmins').disabled = false;
 	document.getElementById('alarmsecs').disabled = false;
 	document.getElementById('ampm').disabled = false;
+
 }
